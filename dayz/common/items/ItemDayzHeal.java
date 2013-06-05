@@ -58,7 +58,7 @@ public class ItemDayzHeal extends Item
     {
     	switch(this.textureIndex)
     	{
-    		case 0: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":Bandage"); return;
+    		case 0: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":bandage"); return;
     		case 1: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":antibiotics"); return;
     	}
     }

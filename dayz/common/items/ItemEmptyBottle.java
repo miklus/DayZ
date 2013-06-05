@@ -75,10 +75,10 @@ public class ItemEmptyBottle extends Item
     {
     	switch(this.textureIndex)
     	{
-    		case 0: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":emptyCan"); return;
+    		case 0: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":"); return;
     		case 1: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":emptyWhiskeyBottle"); return;
-    		case 2: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":emptyWhiskeyBottle"); return;
-    		case 3: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":emptyWhiskeyBottle"); return;
+    		case 2: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":"); return;
+    		case 3: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":"); return;
     	}
     }
 }

@@ -97,6 +97,6 @@ public class ItemRemington extends Item
 
     public void registerIcons(IconRegister par1IconRegister)
     {
-    	this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":Remington870");
+    	this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":");
     }
 }

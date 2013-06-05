@@ -96,7 +96,7 @@ public class ItemGlock17 extends Item
     }
     public void registerIcons(IconRegister par1IconRegister)
     {
-    	this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":Glock17");
+    	this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":G17");
     }	
 }
 

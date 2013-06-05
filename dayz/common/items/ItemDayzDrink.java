@@ -58,13 +58,13 @@ public class ItemDayzDrink extends ItemFood
     {
     	switch(this.textureIndex)
     	{
-    		case 0: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":bloodBag"); return;
-    		case 1: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":canSodaPepsi"); return;
-    		case 2: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":canSodaPepsi"); return;
-    		case 3: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":bloodBag"); return;
+    		case 0: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":"); return;
+    		case 1: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":canSodaCoke"); return;
+    		case 2: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":canSodaCoke"); return;
+    		case 3: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":canSodaMountainDew"); return;
     		case 4: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":canSodaPepsi"); return;
-    		case 5: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":bloodBag");return;
-    		case 6: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":bloodBag");return;
+    		case 5: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":");return;
+    		case 6: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":");return;
     	}
     }
 }

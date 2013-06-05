@@ -58,6 +58,6 @@ public class ItemWhiskeybottleFull extends ItemDayzDrink
 
     public void registerIcons(IconRegister par1IconRegister)
     {
-    	this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":emptyWhiskeyBottle");
+    	this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":");
     }
 }

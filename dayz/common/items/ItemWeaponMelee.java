@@ -111,11 +111,11 @@ public class ItemWeaponMelee extends Item
     {
     	switch(this.textureIndex)
     	{
-    		case 0: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":BaseballBat"); return;
-    		case 1: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":NailedBaseballBat"); return;
-    		case 2: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":Plank"); return;
-    		case 3: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":NailedPlank"); return;
-    		case 4: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":SteelPipe"); return;
+    		case 0: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":"); return;
+    		case 1: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":"); return;
+    		case 2: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":"); return;
+    		case 3: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":"); return;
+    		case 4: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":"); return;
     		case 5: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":Crowbar"); return;
     		case 6: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":Machete"); return;
     	}

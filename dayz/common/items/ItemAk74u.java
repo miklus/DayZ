@@ -138,6 +138,6 @@ public class ItemAk74u extends Item
     
     public void registerIcons(IconRegister par1IconRegister)
     {
-    	this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":aks74u");
+    	this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":AK-74");
     }
 }

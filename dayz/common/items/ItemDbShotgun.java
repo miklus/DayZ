@@ -97,6 +97,6 @@ public class ItemDbShotgun extends Item
 
     public void registerIcons(IconRegister par1IconRegister)
     {
-    	this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":DoubleBarrelShotgun");
+    	this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":DoubleBarreledShotgun");
     }
 }
