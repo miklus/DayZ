@@ -12,6 +12,7 @@ import dayz.common.playerdata.PlayerStats;
 public class ItemDayzDrink extends ItemFood
 {
     private final int thirst;
+    private int textureIndex;
 
     /**
      * Day Z Drink Item
@@ -19,11 +20,12 @@ public class ItemDayzDrink extends ItemFood
      * @param saturationmodifier The hunger bar saturation to be restored
      * @param drinkEffect Potion effect of the drink
      */
-    public ItemDayzDrink(int itemID, int thirst)
+    public ItemDayzDrink(int itemID, int thirst, int index)
     {
         super(itemID, 0, thirst, false);
         this.thirst = thirst;
         this.maxStackSize = 1;
+        this.textureIndex = index;
     }
 
     @Override
@@ -54,6 +56,15 @@ public class ItemDayzDrink extends ItemFood
     
     public void registerIcons(IconRegister par1IconRegister)
     {
-    	this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":bloodBag");
+    	switch(this.textureIndex)
+    	{
+    		case 0: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":bloodBag"); return;
+    		case 1: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":canSodaPepsi"); return;
+    		case 2: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":canSodaPepsi"); return;
+    		case 3: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":bloodBag"); return;
+    		case 4: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":canSodaPepsi"); return;
+    		case 5: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":bloodBag");return;
+    		case 6: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":bloodBag");return;
+    	}
     }
 }

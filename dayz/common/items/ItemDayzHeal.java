@@ -14,15 +14,16 @@ public class ItemDayzHeal extends Item
     private int healAmount;
     private boolean stopBleeding;
     private boolean stopInfection;
+    private int textureIndex;
 
-    public ItemDayzHeal(int i, int amountToHeal, boolean stopBleeding, boolean stopInfection)
+    public ItemDayzHeal(int i, int amountToHeal, boolean stopBleeding, boolean stopInfection, int index)
     {
         super(i);
         maxStackSize = 1;
         healAmount = amountToHeal;
         this.stopBleeding = stopBleeding;
         this.stopInfection = stopInfection;
-        
+        this.textureIndex = index;
     }
 
     public int getHealAmount()
@@ -55,6 +56,10 @@ public class ItemDayzHeal extends Item
 
     public void registerIcons(IconRegister par1IconRegister)
     {
-    	this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":bloodBag");
+    	switch(this.textureIndex)
+    	{
+    		case 0: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":Bandage"); return;
+    		case 1: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":antibiotics"); return;
+    	}
     }
 }

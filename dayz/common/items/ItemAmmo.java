@@ -1,8 +1,14 @@
 package dayz.common.items;
 
+import java.awt.List;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+
 import dayz.common.misc.Util;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.item.Item;
+import net.minecraft.util.Icon;
 
 public class ItemAmmo extends Item
 {
@@ -18,13 +24,12 @@ public class ItemAmmo extends Item
     {
     	switch(this.textureIndex)
     	{
-    		case 0:	this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":akmag");
-    		case 1: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":MakarovMag");
-    		case 2: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":akmag");
-    		case 3: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":LeeMag");
-    		case 4: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":akmag");
-    		case 5: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":akmag");
-    		default: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":akmag");
+    		case 0: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":akmag"); return;
+    		case 1: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":MakarovMag"); return;
+    		case 2: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":akmag"); return;
+    		case 3: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":LeeMag"); return;
+    		case 4: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":akmag"); return;
+    		case 5: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":akmag");return;
     	}
     }
 }

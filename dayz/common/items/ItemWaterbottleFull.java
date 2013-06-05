@@ -17,7 +17,7 @@ public class ItemWaterbottleFull extends ItemDayzDrink
 
     public ItemWaterbottleFull(int itemID, int thirst)
     {
-        super(itemID, 0);
+        super(itemID, 0, 0);
         this.maxStackSize = 1;
         this.thirst = thirst;
     }
@@ -55,6 +55,6 @@ public class ItemWaterbottleFull extends ItemDayzDrink
 
     public void registerIcons(IconRegister par1IconRegister)
     {
-    	this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":bloodBag");
+    	this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":waterbottle");
     }
 }

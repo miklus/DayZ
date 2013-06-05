@@ -119,32 +119,35 @@ public class DayZ
     public static final Item matches = (new ItemFirestarter(3000, 8)).setUnlocalizedName("matches");
     public static final Item emptyCan = new ItemEmptyCan(3043).setUnlocalizedName("emptycan").setCreativeTab(DayZ.creativeTabDayZ);
     
-	public static final Item heinz = new ItemDayzFood(3002, 6, 1, false).setUnlocalizedName("heinz").setCreativeTab(DayZ.creativeTabDayZ);
-	public static final Item cannedspag = new ItemDayzFood(3003, 6, 1, false).setUnlocalizedName("cannedspag").setCreativeTab(DayZ.creativeTabDayZ);
-    public static final Item cannedbeans = new ItemDayzFood(3004, 6, 1, false).setUnlocalizedName("cannedbeans").setCreativeTab(DayZ.creativeTabDayZ);
-    public static final Item cannedfish = new ItemDayzFood(3005, 6, 1, false).setUnlocalizedName("cannedfish").setCreativeTab(DayZ.creativeTabDayZ);
-    public static final Item chocolate = new ItemDayzFood(3006, 4, 0.5F, false).setUnlocalizedName("chocolate").setCreativeTab(DayZ.creativeTabDayZ);
-    public static final Item cannedpasta = new ItemDayzFood(3035, 6, 1, false).setUnlocalizedName("cannedpasta").setCreativeTab(DayZ.creativeTabDayZ);
+	public static final Item heinz = new ItemDayzFood(3002, 6, 1, false, 0).setUnlocalizedName("heinz").setCreativeTab(DayZ.creativeTabDayZ);
+	public static final Item cannedspag = new ItemDayzFood(3003, 6, 1, false, 1).setUnlocalizedName("cannedspag").setCreativeTab(DayZ.creativeTabDayZ);
+    public static final Item cannedbeans = new ItemDayzFood(3004, 6, 1, false, 2).setUnlocalizedName("cannedbeans").setCreativeTab(DayZ.creativeTabDayZ);
+    public static final Item cannedfish = new ItemDayzFood(3005, 6, 1, false, 3).setUnlocalizedName("cannedfish").setCreativeTab(DayZ.creativeTabDayZ);
+    public static final Item chocolate = new ItemDayzFood(3006, 4, 0.5F, false, 4).setUnlocalizedName("chocolate").setCreativeTab(DayZ.creativeTabDayZ);
+    public static final Item cannedpasta = new ItemDayzFood(3035, 6, 1, false, 5).setUnlocalizedName("cannedpasta").setCreativeTab(DayZ.creativeTabDayZ);
 
     public static final Item waterbottlefull = new ItemWaterbottleFull(3007, 6000).setUnlocalizedName("waterbottlefull").setCreativeTab(DayZ.creativeTabDayZ);
-    public static final Item waterbottleempty = new ItemEmptyBottle(3008, Block.waterMoving.blockID, true).setUnlocalizedName("waterbottleempty").setCreativeTab(DayZ.creativeTabDayZ);
-    public static final Item whiskeybottleempty = new ItemEmptyBottle(3009, Block.waterMoving.blockID, false).setUnlocalizedName("whiskeybottleempty").setCreativeTab(DayZ.creativeTabDayZ);
-    public static final Item whiskeybottlefull = new ItemWhiskeybottleFull(3010, 3000, whiskeybottleempty).setUnlocalizedName("whiskeybottlefull").setCreativeTab(DayZ.creativeTabDayZ);
-    public static final Item lemonade = new ItemDayzDrink(3011, 3000).setUnlocalizedName("lemonade").setCreativeTab(DayZ.creativeTabDayZ);
     public static final Item waterbottledirty = new ItemWaterbottleDirty(3012, 0, 2, false).setUnlocalizedName("waterbottledirty").setCreativeTab(DayZ.creativeTabDayZ);
-    public static final Item colaDrink = new ItemDayzDrink(3044, 3000).setUnlocalizedName("colaDrink").setCreativeTab(DayZ.creativeTabDayZ);
-    public static final Item colaDrink2 = new ItemDayzDrink(3045, 3000).setUnlocalizedName("colaDrink2").setCreativeTab(DayZ.creativeTabDayZ);
-    public static final Item energyDrink = new ItemDayzDrink(3046, 3000).setUnlocalizedName("energyDrink").setCreativeTab(DayZ.creativeTabDayZ);
-    public static final Item colaDrink3 = new ItemDayzDrink(3047, 3000).setUnlocalizedName("colaDrink3").setCreativeTab(DayZ.creativeTabDayZ);
-    public static final Item appleDrink = new ItemDayzDrink(3048, 3000).setUnlocalizedName("appleDrink").setCreativeTab(DayZ.creativeTabDayZ);
-    public static final Item vodkabottleempty = new ItemEmptyBottle(3049, Block.waterMoving.blockID, false).setUnlocalizedName("vodkabottleempty").setCreativeTab(DayZ.creativeTabDayZ);
+    
+    public static final Item waterbottleempty = new ItemEmptyBottle(3008, Block.waterMoving.blockID, true, 0).setUnlocalizedName("waterbottleempty").setCreativeTab(DayZ.creativeTabDayZ);
+    public static final Item whiskeybottleempty = new ItemEmptyBottle(3009, Block.waterMoving.blockID, false, 1).setUnlocalizedName("whiskeybottleempty").setCreativeTab(DayZ.creativeTabDayZ);
+    public static final Item vodkabottleempty = new ItemEmptyBottle(3049, Block.waterMoving.blockID, false, 2).setUnlocalizedName("vodkabottleempty").setCreativeTab(DayZ.creativeTabDayZ);
+    public static final Item ciderbottleempty = new ItemEmptyBottle(3051, Block.waterMoving.blockID, false, 3).setUnlocalizedName("ciderbottleempty").setCreativeTab(DayZ.creativeTabDayZ);
+    
     public static final Item vodkabottlefull = new ItemWhiskeybottleFull(3050, 3000, vodkabottleempty).setUnlocalizedName("vodkabottlefull").setCreativeTab(DayZ.creativeTabDayZ);
-    public static final Item ciderbottleempty = new ItemEmptyBottle(3051, Block.waterMoving.blockID, false).setUnlocalizedName("ciderbottleempty").setCreativeTab(DayZ.creativeTabDayZ);
     public static final Item ciderbottlefull = new ItemWhiskeybottleFull(3052, 3000, ciderbottleempty).setUnlocalizedName("ciderbottlefull").setCreativeTab(DayZ.creativeTabDayZ);
-    public static final Item orangeDrink = new ItemDayzDrink(3053, 3000).setUnlocalizedName("orangeDrink").setCreativeTab(DayZ.creativeTabDayZ);
+    public static final Item whiskeybottlefull = new ItemWhiskeybottleFull(3010, 3000, whiskeybottleempty).setUnlocalizedName("whiskeybottlefull").setCreativeTab(DayZ.creativeTabDayZ);
+    
+    public static final Item lemonade = new ItemDayzDrink(3011, 3000, 0).setUnlocalizedName("lemonade").setCreativeTab(DayZ.creativeTabDayZ);
+    public static final Item colaDrink = new ItemDayzDrink(3044, 3000, 1).setUnlocalizedName("colaDrink").setCreativeTab(DayZ.creativeTabDayZ);
+    public static final Item colaDrink2 = new ItemDayzDrink(3045, 3000, 2).setUnlocalizedName("colaDrink2").setCreativeTab(DayZ.creativeTabDayZ);
+    public static final Item energyDrink = new ItemDayzDrink(3046, 3000, 3).setUnlocalizedName("energyDrink").setCreativeTab(DayZ.creativeTabDayZ);
+    public static final Item colaDrink3 = new ItemDayzDrink(3047, 3000, 4).setUnlocalizedName("colaDrink3").setCreativeTab(DayZ.creativeTabDayZ);
+    public static final Item appleDrink = new ItemDayzDrink(3048, 3000, 5).setUnlocalizedName("appleDrink").setCreativeTab(DayZ.creativeTabDayZ);
+    public static final Item orangeDrink = new ItemDayzDrink(3053, 3000, 6).setUnlocalizedName("orangeDrink").setCreativeTab(DayZ.creativeTabDayZ);
 
-    public static final Item bandage = new ItemDayzHeal(3013, 0, true, false).setUnlocalizedName("bandage").setCreativeTab(DayZ.creativeTabDayZ);
-    public static final Item antibiotics = new ItemDayzHeal(3014, 0, false, true).setUnlocalizedName("antibiotics").setCreativeTab(DayZ.creativeTabDayZ);
+    public static final Item bandage = new ItemDayzHeal(3013, 0, true, false, 0).setUnlocalizedName("bandage").setCreativeTab(DayZ.creativeTabDayZ);
+    public static final Item antibiotics = new ItemDayzHeal(3014, 0, false, true, 1).setUnlocalizedName("antibiotics").setCreativeTab(DayZ.creativeTabDayZ);
     public static final Item bloodbag = new ItemBloodBag(3015).setUnlocalizedName("bloodbag").setCreativeTab(DayZ.creativeTabDayZ);
     
     public static final Item ak74u = new ItemAk74u(3016).setUnlocalizedName("ak74u").setCreativeTab(DayZ.creativeTabDayZ);
@@ -161,13 +164,13 @@ public class DayZ
     public static final Item glock17ammo = new ItemAmmo(3025, 4).setUnlocalizedName("glock17ammo").setCreativeTab(DayZ.creativeTabDayZ);
 	public static final Item dbshotgunammo = new ItemAmmo(3037, 5).setUnlocalizedName("dbshotgunammo").setCreativeTab(DayZ.creativeTabDayZ);
 
-    public static final Item baseballbat = (new ItemWeaponMelee(3026, EnumToolMaterial.WOOD, 6)).setUnlocalizedName("baseballbat").setCreativeTab(DayZ.creativeTabDayZ);
-    public static final Item baseballbatnailed = (new ItemWeaponMelee(3027, EnumToolMaterial.WOOD, 8)).setUnlocalizedName("baseballbatnailed").setCreativeTab(DayZ.creativeTabDayZ);
-    public static final Item plank = (new ItemWeaponMelee(3028, EnumToolMaterial.WOOD, 7)).setUnlocalizedName("plank").setCreativeTab(DayZ.creativeTabDayZ);
-    public static final Item planknailed = (new ItemWeaponMelee(3029, EnumToolMaterial.WOOD, 8)).setUnlocalizedName("planknailed").setCreativeTab(DayZ.creativeTabDayZ);
-    public static final Item pipe = (new ItemWeaponMelee(3030, EnumToolMaterial.WOOD, 8)).setUnlocalizedName("pipe").setCreativeTab(DayZ.creativeTabDayZ);
-    public static final Item crowbar = (new ItemWeaponMelee(3041, EnumToolMaterial.WOOD, 8)).setUnlocalizedName("crowbar").setCreativeTab(DayZ.creativeTabDayZ);
-    public static final Item machete = (new ItemWeaponMelee(3042, EnumToolMaterial.WOOD, 7)).setUnlocalizedName("machate").setCreativeTab(DayZ.creativeTabDayZ);
+    public static final Item baseballbat = (new ItemWeaponMelee(3026, EnumToolMaterial.WOOD, 6, 0)).setUnlocalizedName("baseballbat").setCreativeTab(DayZ.creativeTabDayZ);
+    public static final Item baseballbatnailed = (new ItemWeaponMelee(3027, EnumToolMaterial.WOOD, 8, 1)).setUnlocalizedName("baseballbatnailed").setCreativeTab(DayZ.creativeTabDayZ);
+    public static final Item plank = (new ItemWeaponMelee(3028, EnumToolMaterial.WOOD, 7, 2)).setUnlocalizedName("plank").setCreativeTab(DayZ.creativeTabDayZ);
+    public static final Item planknailed = (new ItemWeaponMelee(3029, EnumToolMaterial.WOOD, 8, 3)).setUnlocalizedName("planknailed").setCreativeTab(DayZ.creativeTabDayZ);
+    public static final Item pipe = (new ItemWeaponMelee(3030, EnumToolMaterial.WOOD, 8, 4)).setUnlocalizedName("pipe").setCreativeTab(DayZ.creativeTabDayZ);
+    public static final Item crowbar = (new ItemWeaponMelee(3041, EnumToolMaterial.WOOD, 8, 5)).setUnlocalizedName("crowbar").setCreativeTab(DayZ.creativeTabDayZ);
+    public static final Item machete = (new ItemWeaponMelee(3042, EnumToolMaterial.WOOD, 7, 6)).setUnlocalizedName("machate").setCreativeTab(DayZ.creativeTabDayZ);
   
     public static final Item camohelmet = (new ItemCamo(3031, enumArmorMaterialCamo, 5, 0)).setUnlocalizedName("camohelmet");
     public static final Item camochest = (new ItemCamo(3032, enumArmorMaterialCamo, 5, 1)).setUnlocalizedName("camochest");

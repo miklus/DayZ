@@ -18,19 +18,22 @@ public class ItemDayzFood extends ItemFood
 
     /** Whether wolves like this food (true for raw and cooked porkchop). */
     private final boolean isWolfsFavoriteMeat;
+    
+    private int textureIndex;
 
-    public ItemDayzFood(int par1, int par2, float par3, boolean par4)
+    public ItemDayzFood(int par1, int par2, float par3, boolean par4, int index)
     {
         super(par1, par2, par3, par4);
         healAmount = par2;
         isWolfsFavoriteMeat = par4;
         saturationModifier = par3;
         maxStackSize = 1;
+        this.textureIndex = index;
     }
 
-    public ItemDayzFood(int par1, int par2, boolean par3)
+    public ItemDayzFood(int par1, int par2, boolean par3, int index)
     {
-        this(par1, par2, 0.6F, par3);
+        this(par1, par2, 0.6F, par3, index);
     }
     
     @Override
@@ -46,6 +49,14 @@ public class ItemDayzFood extends ItemFood
 
     public void registerIcons(IconRegister par1IconRegister)
     {
-    	this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":bloodBag");
+    	switch(this.textureIndex)
+    	{
+    		case 0: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":bloodBag"); return;
+    		case 1: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":bloodBag"); return;
+    		case 2: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":cannedBakedBeans"); return;
+    		case 3: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":cannedSardines"); return;
+    		case 4: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":bloodBag"); return;
+    		case 5: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":cannedPasta");return;
+    	}
     }
 }

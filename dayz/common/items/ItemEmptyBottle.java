@@ -16,13 +16,15 @@ public class ItemEmptyBottle extends Item
     /** field for checking if the bucket has been filled. */
     private int isFull;
     private boolean isRefillable;
+    private int textureIndex;
 
-    public ItemEmptyBottle(int i, int j, boolean refillable)
+    public ItemEmptyBottle(int i, int j, boolean refillable, int index)
     {
         super(i);
         maxStackSize = 1;
         this.isFull = j;
         this.isRefillable = refillable;
+        this.textureIndex = index;
     }
 
     public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
@@ -71,6 +73,12 @@ public class ItemEmptyBottle extends Item
     
     public void registerIcons(IconRegister par1IconRegister)
     {
-    	this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":bloodBag");
+    	switch(this.textureIndex)
+    	{
+    		case 0: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":emptyCan"); return;
+    		case 1: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":emptyWhiskeyBottle"); return;
+    		case 2: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":emptyWhiskeyBottle"); return;
+    		case 3: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":emptyWhiskeyBottle"); return;
+    	}
     }
 }

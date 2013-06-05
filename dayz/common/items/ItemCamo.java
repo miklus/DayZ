@@ -47,7 +47,13 @@ public class ItemCamo extends ItemArmor implements IArmorTextureProvider
 
     public void registerIcons(IconRegister par1IconRegister)
     {
-    	this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":GhillieHead");
+    	switch(this.armorType)
+    	{
+    	case 0: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":GhillieHead"); return;
+    	case 1: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":GhillieChest"); return;
+    	case 2: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":GhillieLegs"); return;
+    	case 3: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":GhillieFeet"); return;
+    	}
     }
 
     @Override

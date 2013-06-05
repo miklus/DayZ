@@ -18,16 +18,18 @@ public class ItemWeaponMelee extends Item
 {
     private int weaponDamage;
     private final EnumToolMaterial toolMaterial;
+    private int textureIndex;
     /*
      * Day Z Melee Weapon class. Params = Item Id, EnumToolMaterial, damage
      */
-    public ItemWeaponMelee(int par1, EnumToolMaterial par2EnumToolMaterial, int damage)
+    public ItemWeaponMelee(int par1, EnumToolMaterial par2EnumToolMaterial, int damage, int textureIndex)
     {
         super(par1);
         this.toolMaterial = par2EnumToolMaterial;
         this.maxStackSize = 1;
         this.setMaxDamage(par2EnumToolMaterial.getMaxUses());
         this.weaponDamage = damage;
+        this.textureIndex = textureIndex;
     }
 
      /**
@@ -107,6 +109,15 @@ public class ItemWeaponMelee extends Item
     
     public void registerIcons(IconRegister par1IconRegister)
     {
-    	this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":bloodBag");
+    	switch(this.textureIndex)
+    	{
+    		case 0: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":BaseballBat"); return;
+    		case 1: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":NailedBaseballBat"); return;
+    		case 2: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":Plank"); return;
+    		case 3: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":NailedPlank"); return;
+    		case 4: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":SteelPipe"); return;
+    		case 5: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":Crowbar"); return;
+    		case 6: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":Machete"); return;
+    	}
     }
 }

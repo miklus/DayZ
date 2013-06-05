@@ -19,7 +19,7 @@ public class ItemWhiskeybottleFull extends ItemDayzDrink
 
     public ItemWhiskeybottleFull(int itemID, int thirst, Item returnItem)
     {
-        super(itemID, thirst);
+        super(itemID, thirst, 0);
         this.thirst = thirst;
         this.returnItem = returnItem;
         this.maxStackSize = 1;
@@ -58,6 +58,6 @@ public class ItemWhiskeybottleFull extends ItemDayzDrink
 
     public void registerIcons(IconRegister par1IconRegister)
     {
-    	this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":bloodBag");
+    	this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":emptyWhiskeyBottle");
     }
 }
