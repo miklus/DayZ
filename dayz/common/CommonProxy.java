@@ -57,7 +57,7 @@ public class CommonProxy
         DayZ.dayzchestcommon = new BlockChestDayZ(DayZ.dayzchestcommonID, 0,EnumChestType.COMMON).setUnlocalizedName("dayzchestcommon").setBlockUnbreakable().setCreativeTab(DayZ.creativeTabDayZ);
         DayZ.chainlinkfence = (new BlockFence(DayZ.chainlinkfenceID, "1", "1", Material.iron, false)).setHardness(5.0F).setResistance(10.0F).setStepSound(Block.soundMetalFootstep).setUnlocalizedName("chainlinkfence").setCreativeTab(DayZ.creativeTabDayZ);
         DayZ.sandbagblock = (new BlockBase(DayZ.sandbagblockID, Material.clay)).setHardness(2.0F).setResistance(10.0F).setStepSound(Block.soundSandFootstep).setUnlocalizedName("sandbagblock").setCreativeTab(DayZ.creativeTabDayZ);
-        DayZ.nails = new BlockNails(DayZ.nailsID, Material.circuits).setUnlocalizedName("sandbagblock").setHardness(1F).setResistance(1F).setCreativeTab(DayZ.creativeTabDayZ);
+        DayZ.nails = new BlockNails(DayZ.nailsID, Material.circuits).setUnlocalizedName("nails").setHardness(1F).setResistance(1F).setCreativeTab(DayZ.creativeTabDayZ);
         
         GameRegistry.registerBlock(DayZ.barbedwire, "barbedwire");
     	GameRegistry.registerBlock(DayZ.dayzchestall, "dayzchestall");

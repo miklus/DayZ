@@ -16,13 +16,15 @@ public class ItemWhiskeybottleFull extends ItemDayzDrink
 {
     private int thirst;
     private Item returnItem;
+    private int textureIndex;
 
-    public ItemWhiskeybottleFull(int itemID, int thirst, Item returnItem)
+    public ItemWhiskeybottleFull(int itemID, int thirst, Item returnItem, int textureIndex)
     {
         super(itemID, thirst, 0);
         this.thirst = thirst;
         this.returnItem = returnItem;
         this.maxStackSize = 1;
+        this.textureIndex = textureIndex;
     }
 
     public ItemStack onEaten(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
@@ -58,6 +60,11 @@ public class ItemWhiskeybottleFull extends ItemDayzDrink
 
     public void registerIcons(IconRegister par1IconRegister)
     {
-    	this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":");
+    	switch(this.textureIndex)
+    	{
+    		case 0: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":vodkaBottleFull"); return;
+    		case 1: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":ciderBottleFull"); return;
+    		case 2: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":whiskeyBottleFull"); return;
+    	}
     }
 }

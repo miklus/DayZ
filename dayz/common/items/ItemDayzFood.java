@@ -51,11 +51,11 @@ public class ItemDayzFood extends ItemFood
     {
     	switch(this.textureIndex)
     	{
-    		case 0: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":"); return;
-    		case 1: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":"); return;
+    		case 0: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":heinz"); return;
+    		case 1: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":cannedSpag"); return;
     		case 2: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":cannedBakedBeans"); return;
     		case 3: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":cannedSardines"); return;
-    		case 4: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":"); return;
+    		case 4: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":chocolate"); return;
     		case 5: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":cannedPasta");return;
     	}
     }

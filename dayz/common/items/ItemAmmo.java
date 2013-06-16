@@ -26,10 +26,10 @@ public class ItemAmmo extends Item
     	{
     		case 0: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":AkMag"); return;
     		case 1: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":MakarovMag"); return;
-    		case 2: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":"); return;
+    		case 2: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":remingtonAmmo"); return;
     		case 3: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":LeeEnfieldMag"); return;
     		case 4: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":G17Mag"); return;
-    		case 5: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":");return;
+    		case 5: this.itemIcon = par1IconRegister.registerIcon(Util.ID + ":dbShotAmmo");return;
     	}
     }
 }

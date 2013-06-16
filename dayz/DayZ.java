@@ -134,9 +134,9 @@ public class DayZ
     public static final Item vodkabottleempty = new ItemEmptyBottle(3049, Block.waterMoving.blockID, false, 2).setUnlocalizedName("vodkabottleempty").setCreativeTab(DayZ.creativeTabDayZ);
     public static final Item ciderbottleempty = new ItemEmptyBottle(3051, Block.waterMoving.blockID, false, 3).setUnlocalizedName("ciderbottleempty").setCreativeTab(DayZ.creativeTabDayZ);
     
-    public static final Item vodkabottlefull = new ItemWhiskeybottleFull(3050, 3000, vodkabottleempty).setUnlocalizedName("vodkabottlefull").setCreativeTab(DayZ.creativeTabDayZ);
-    public static final Item ciderbottlefull = new ItemWhiskeybottleFull(3052, 3000, ciderbottleempty).setUnlocalizedName("ciderbottlefull").setCreativeTab(DayZ.creativeTabDayZ);
-    public static final Item whiskeybottlefull = new ItemWhiskeybottleFull(3010, 3000, whiskeybottleempty).setUnlocalizedName("whiskeybottlefull").setCreativeTab(DayZ.creativeTabDayZ);
+    public static final Item vodkabottlefull = new ItemWhiskeybottleFull(3050, 3000, vodkabottleempty, 0).setUnlocalizedName("vodkabottlefull").setCreativeTab(DayZ.creativeTabDayZ);
+    public static final Item ciderbottlefull = new ItemWhiskeybottleFull(3052, 3000, ciderbottleempty, 1).setUnlocalizedName("ciderbottlefull").setCreativeTab(DayZ.creativeTabDayZ);
+    public static final Item whiskeybottlefull = new ItemWhiskeybottleFull(3010, 3000, whiskeybottleempty, 2).setUnlocalizedName("whiskeybottlefull").setCreativeTab(DayZ.creativeTabDayZ);
     
     public static final Item lemonade = new ItemDayzDrink(3011, 3000, 0).setUnlocalizedName("lemonade").setCreativeTab(DayZ.creativeTabDayZ);
     public static final Item colaDrink = new ItemDayzDrink(3044, 3000, 1).setUnlocalizedName("colaDrink").setCreativeTab(DayZ.creativeTabDayZ);
